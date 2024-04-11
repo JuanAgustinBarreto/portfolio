@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JUAN</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">CONOCIMIENTOS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>JUAN AGUSTIN BARRETO</h1>
+            <h2>Estudiante Analista en Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/juan.barreto.180"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/juan123_a"><i class="fab fa-twitter "></i></a>
+                <a href="https://www.instagram.com/barretojuan_2"><i class="fab fa-instagram "></i></a>
+                <a href="https://www.linkedin.com/in/juan-agustin-barreto-4b069b227/ "><i class="fab fa-linkedin-in "></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi ">
+        <div class="contenido-seccion ">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Juan Agustín Barreto.</span> ¡Bienvenido a mi página personal! Soy un estudiante de analista en sistemas, comprometido con la exploración y aplicación de soluciones innovadoras en el mundo de la tecnología. Aquí encontrarás
+                un reflejo de mi creatividad, habilidades de comunicación y capacidad para trabajar en equipo. Mi enfoque va más allá de simplemente aprender. Soy un entusiasta del aprendizaje continuo, siempre buscando oportunidades para expandir mis
+                conocimientos y enfrentar nuevos desafíos con entusiasmo y determinación. Como estudiante de analista en sistemas, he desarrollado una sólida comprensión de los principios fundamentales de la informática y la resolución de problemas técnicos.
+                Mi habilidad para comunicar ideas complejas de manera clara y concisa me permite colaborar efectivamente en equipos multidisciplinarios y transmitir información de manera accesible para diversos públicos. Me caracterizo por mi atención
+                al detalle y mi capacidad para adaptarme rápidamente a entornos cambiantes. Soy proactivo en la búsqueda de oportunidades para crecer profesionalmente y contribuir de manera significativa a proyectos que desafíen mis habilidades y me permitan
+                alcanzar todo mi potencial.</p>
+
+            <div class="fila ">
+                <!-- datos personales -->
+                <div class="col ">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong> 29-07-2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong> (+54)93435451818
+                        </li>
+                        <li>
+                            <strong>Email</strong> barretojuanagustin@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong> Nogoyá, Argentina Rosario, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDIANTE-FREELANCER</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col ">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses ">
+                        <div class="interes ">
+                            <i class="fas fa-gamepad "></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes ">
+                            <i class="fas fa-headphones "></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes ">
+                            <i class="fas fa-plane "></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes ">
+                            <i class="fas fa-hiking "></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes ">
+                            <i class="fas fa-car "></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes ">
+                            <i class="fas fa-camera "></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a href="img/Curriculum.pdf " download="curriculum.pdf ">
+                <button>
+                    Descargar CV <i class="fas fa-download "></i>
+                    <span class="overlay "></span>
+                </button>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SECCION CONOCIMIENTOS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>CONOCIMIENTOS</h2>
+            <div class="fila ">
+                <!-- Conocimientos Técnicos -->
+                <div class="col ">
+                    <h3>Conocimientos Técnicos</h3>
+                    <div class="skill ">
+                        <span>Javascript</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 60%; ">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill ">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 80%; ">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill ">
+                        <span>Photoshop</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 90%; ">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill ">
+                        <span>Excel</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 80%; ">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill ">
+                        <span>R</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 75%; ">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Características Profesionales -->
+                <div class="col ">
+                    <h3>Características Profesionales</h3>
+                    <div class="skill ">
+                        <span>Comunicación</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 80%; ">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill ">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 80%; ">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill ">
+                        <span>Creatividad</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 100%; ">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill ">
+                        <span>Dedicación</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 100%; ">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill ">
+                        <span>Project Management</span>
+                        <div class="barra-skill ">
+                            <div class="progreso " style="width: 94%; ">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion ">
+            <h2>Curriculum</h2>
+            <div class="fila ">
+                <div class="col izquierda ">
+                    <h3>Educación/Cursos</h3>
+                    <div class="item izq ">
+                        <h4>Primaria/Secundaria</h4>
+                        <span class="casa ">Colegio San Miguel</span>
+                        <span class="fecha ">2003 - 2018</span>
+                        <p>Educación jardin, primaria y secundaria. Bachiller en Economía.</p>
+                        <div class="conectori ">
+                            <div class="circuloi "></div>
+                        </div>
+                    </div>
+                    <div class="item izq ">
+                        <h4>Analista en sistemas</h4>
+                        <span class="casa ">Instituto Politécnico Superior</span>
+                        <span class="fecha ">2021 - Actual</span>
+                        <p>Estudiante Analista en Sistemas</p>
+                        <div class="conectori ">
+                            <div class="circuloi "></div>
+                        </div>
+                    </div>
+                    <div class="item izq ">
+                        <h4>HTML</h4>
+                        <span class="casa ">Ademass Campus</span>
+                        <span class="fecha ">2024</span>
+                        <p>Curso HTML</p>
+                        <div class="conectori ">
+                            <div class="circuloi "></div>
+                        </div>
+                    </div>
+                    <div class="item izq ">
+                        <h4>R PROGRAMMING</h4>
+                        <span class="casa ">IPS</span>
+                        <span class="fecha ">2023</span>
+                        <p>Curso análisis de datos y procesamiento estadístico de datos</p>
+                        <div class="conectori ">
+                            <div class="circuloi "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha ">
+                    <h3>Educación/Cursos</h3>
+                    <div class="item der ">
+                        <h4>Microsoft Excel</h4>
+                        <span class="casa ">Cursos intensivos</span>
+                        <span class="fecha ">2022-23</span>
+                        <p>Curso intensivo Excel</p>
+                        <div class="conectord ">
+                            <div class="circulod "></div>
+                        </div>
+                    </div>
+                    <div class="item der ">
+                        <h4>Microsoft Word</h4>
+                        <span class="casa ">Cursos intensivos</span>
+                        <span class="fecha ">2023</span>
+                        <p></p>
+                        <div class="conectord ">
+                            <div class="circulod "></div>
+                        </div>
+                    </div>
+                    <div class="item der ">
+                        <h4>Seguridad informática</h4>
+                        <span class="casa ">Conectar Argentina</span>
+                        <span class="fecha ">2022-23</span>
+                        <p>Cursos Educar Portal Argentina</p>
+                        <div class="conectord ">
+                            <div class="circulod "></div>
+                        </div>
+                    </div>
+                    <div class="item der ">
+                        <h4>Programacion Web</h4>
+                        <span class="casa ">Conectar Argentina</span>
+                        <span class="fecha ">2022</span>
+                        <p>Cursos Educar Portal Argentina</p>
+                        <div class="conectord ">
+                            <div class="circulod "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion ">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria ">
+                <div class="proyecto ">
+                    <img src="img/p1.jpg " alt=" ">
+                    <div class="overlay ">
+                        <h3>Gráficos</h3>
+                        <p>Programacion R</p>
+                    </div>
+                </div>
+                <div class="proyecto ">
+                    <img src="img/p2.jpg " alt=" ">
+                    <div class="overlay ">
+                        <h3>Control Stock</h3>
+                        <p>Programacion</p>
+                    </div>
+                </div>
+                <div class="proyecto ">
+                    <img src="img/p3.jpg " alt=" ">
+                    <div class="overlay ">
+                        <h3>Logos</h3>
+                        <p>Diseño</p>
+                    </div>
+                </div>
+                <div class="proyecto ">
+                    <img src="img/p4.jpg " alt=" ">
+                    <div class="overlay ">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto ">
+                    <img src="img/p5.jpg " alt=" ">
+                    <div class="overlay ">
+                        <h3>Logos</h3>
+                        <p>Diseño</p>
+                    </div>
+                </div>
+                <div class="proyecto ">
+                    <img src="img/p6.jpg " alt=" ">
+                    <div class="overlay ">
+                        <h3>Diseño Creativo</h3>
+                        <p>Diseño</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion ">
+            <h2>CONTACTO</h2>
+            <div class="fila ">
+                <!-- Formulario -->
+                <div class="col ">
+                    <input type="text " placeholder="Nombre ">
+                    <input type="text " placeholder="Número telefónico ">
+                    <input type="text " placeholder="Dirección de correo ">
+                    <input type="text " placeholder="Asunto ">
+                    <textarea name=" " id=" " cols="30 " rows="10 " placeholder="Mensaje "></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane "></i>
+                        <span class="overlay "></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col ">
+                    <img src="img/ubicacion.png " alt=" ">
+                    <div class="info ">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot "></i> Rosario, Santa Fe, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen "></i> Contacto: 03435-15451818
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope "></i> Email: barretojuanagustin@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio " class="arriba ">
+            <i class="fa-solid fa-angles-up "></i>
+        </a>
+        <div class="redes ">
+            <a href="https://www.facebook.com/juan.barreto.180"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/juan123_a"><i class="fab fa-twitter "></i></a>
+            <a href="https://www.instagram.com/barretojuan_2"><i class="fab fa-instagram "></i></a>
+            <a href="https://www.linkedin.com/in/juan-agustin-barreto-4b069b227/ "><i class="fab fa-linkedin-in "></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js "></script>
+</body>
+
+</html>
