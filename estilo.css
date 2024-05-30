@@ -441,7 +441,7 @@ html {
         width: 0%;
     }
     100% {
-        width: 65%;
+        width: 85%;
     }
 }
 
@@ -864,5 +864,21 @@ footer .arriba {
     }
     .contacto .fila .col {
         width: 100%;
+    }
+}
+
+
+/* Estilos para dispositivos móviles */
+
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .container {
+        padding: 0 10px;
     }
 }
