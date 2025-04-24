@@ -39,3 +39,27 @@ function efectoHabilidades() {
 window.onscroll = function() {
     efectoHabilidades();
 }
+
+// Función para manejar el envío del formulario de contacto
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("form-contacto");
+
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevenir comportamiento por defecto (recarga)
+
+            const datos = {
+                nombre: form.nombre.value,
+                telefono: form.telefono.value,
+                correo: form.correo.value,
+                asunto: form.asunto.value,
+                mensaje: form.mensaje.value
+            };
+
+            console.log("Formulario enviado:", datos);
+
+            alert("¡Gracias por tu mensaje, " + datos.nombre + "!");
+            form.reset(); // Limpiar el formulario
+        });
+    }
+});

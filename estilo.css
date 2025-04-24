@@ -587,7 +587,6 @@ html {
 
 
 /* SECCION PORTFOLIO */
-
 .portfolio {
     background-color: #252A2E;
     color: #fff;
@@ -610,18 +609,24 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .portfolio .galeria .proyecto {
     position: relative;
+    width: 100%;
     max-width: 340px;
-    height: fit-content;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
     margin: 10px;
     cursor: pointer;
 }
 
 .portfolio .galeria .proyecto img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -654,6 +659,34 @@ html {
     margin-bottom: 0px;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio .galeria {
+        justify-content: center;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 90%;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio h2 {
+        font-size: 36px;
+    }
+
+    .portfolio .galeria .proyecto {
+        height: 160px;
+    }
+
+    .portfolio .galeria .proyecto .overlay {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
+
+
 
 /* SECCION CONTACTO */
 
@@ -678,6 +711,8 @@ html {
 
 .contacto .fila {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .contacto .col {
@@ -729,31 +764,31 @@ html {
 
 .contacto .col img {
     width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .contacto .col .info {
-    position: absolute;
-    top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 
 .contacto .col .info ul {
     list-style: none;
+    padding: 0;
 }
 
 .contacto .col .info ul li {
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .contacto .col .info ul li i {
     color: #1CB698;
-    display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
 }
+
 
 footer {
     background-color: #252A2E;
